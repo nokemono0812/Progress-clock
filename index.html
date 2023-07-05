@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress clock</title>
+    <style>
+        @font-face{
+            font-family: code;
+            src: url(font/ShipporiMincho-Regular.ttf);
+        }
+        body{
+            background-color: #c3c3c3;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            width: 100vw;
+            height: 100vh;
+            color: #000;
+            user-select: none;
+            font-family: code;
+        }
+        #bar_box{
+            background: #000;
+            width: 500px;
+            height: 20px;
+        }
+        #bar{
+            height: 20px;
+            width: 500px;
+            background-color: lime;
+        }
+        #bar2{
+            height: 20px;
+            width: 500px;
+            background-color: lime;
+        }
+        #bar3{
+            height: 20px;
+            width: 500px;
+            background-color: lime;
+        }
+        #bar4{
+            height: 20px;
+            width: 500px;
+            background-color: lime;
+        }
+        #bar5{
+            height: 20px;
+            width: 500px;
+            background-color: lime;
+        }
+        #bar6{
+            height: 20px;
+            width: 500px;
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Progress clock <span id="dot"></span></h1>
+        <h3 id="now"></h3>
+        <p id="text">
+            <span id="year"></span> is <span id="rate"></span>% completed
+        </p>
+        <div id="bar_box">
+            <div id="bar"></div>
+        </div>
+        <p id="text">
+            <span id="month"></span>, <span id="year2"></span> is <span id="rate2"></span>% completed
+        </p>
+        <div id="bar_box">
+            <div id="bar2"></div>
+        </div>
+        <p id="text">
+            <span id="month2"></span> <span id="day"></span>, <span id="year3"></span> is <span id="rate3"></span>% completed
+        </p>
+        <div id="bar_box">
+            <div id="bar3"></div>
+        </div>
+        <p id="text">
+            <span id="hour"></span> o'clock is <span id="rate4"></span>% completed
+        </p>
+        <div id="bar_box">
+            <div id="bar4"></div>
+        </div>
+        <p id="text">
+            <span id="hour2"></span>:<span id="minute"></span> is <span id="rate5"></span>% completed
+        </p>
+        <div id="bar_box">
+            <div id="bar5"></div>
+        </div>
+        <p id="text">
+            <span id="hour3"></span>:<span id="minute2"></span>:<span id="second"></span> is <span id="rate6"></span>% completed
+        </p>
+        <div id="bar_box">
+            <div id="bar6"></div>
+        </div>
+        <p id="text">
+            <span id="minus" onclick="minus()">[&lt;]</span> <span id="fps">30</span> <span id="plus" onclick="plus()">[&gt;]</span> (now: <span id="fpsNow"></span>fps)<br>
+            (c) 2023 Haruto Fukutome, ver1.01<br>
+            // Page doesn't work well? Please try using Chrome or Safari.
+        </p>
+        <p></p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

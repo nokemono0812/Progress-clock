@@ -237,12 +237,12 @@ function calc(){
     else{
         document.getElementById("rate6").textContent = rate6 * 100;
     }
-    document.getElementById("bar").style.width = rate * 400 + 'px';
-    document.getElementById("bar2").style.width = rate2 * 400 + 'px';
-    document.getElementById("bar3").style.width = rate3 * 400 + 'px';
-    document.getElementById("bar4").style.width = rate4 * 400 + 'px';
-    document.getElementById("bar5").style.width = rate5 * 400 + 'px';
-    document.getElementById("bar6").style.width = rate6 * 400 + 'px';
+    document.getElementById("bar").style.width = rate * 500 + 'px';
+    document.getElementById("bar2").style.width = rate2 * 500 + 'px';
+    document.getElementById("bar3").style.width = rate3 * 500 + 'px';
+    document.getElementById("bar4").style.width = rate4 * 500 + 'px';
+    document.getElementById("bar5").style.width = rate5 * 500 + 'px';
+    document.getElementById("bar6").style.width = rate6 * 500 + 'px';
     if(rate < .50){
         document.getElementById("bar").style.backgroundColor = 'rgb(0,0,255)';
     }
